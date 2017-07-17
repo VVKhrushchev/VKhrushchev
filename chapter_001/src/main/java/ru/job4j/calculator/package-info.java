@@ -1,9 +1,9 @@
 /**
 * Package for calculate test.
-*
-* @author Vladimir Khrushchev (mailto:vladius@bk.ru)
-* @version $Id$
-* @since 0.1
+* Test for Class Calculator for arithmetic operations.
+* @author VladimirKhrushchev
+* @since 12.07.2017
+* @version 0.1
 */
 package ru.job4j.calculator;
 
