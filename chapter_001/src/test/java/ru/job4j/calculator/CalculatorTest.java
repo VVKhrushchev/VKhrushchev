@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
 * @author VladimirKhrushchev
 * @since 12.07.2017
 * @version 0.1
-*/
+**/
 
 public class CalculatorTest {
 	/**
@@ -48,7 +48,7 @@ public class CalculatorTest {
         double expected = 1D;
         assertThat(result, is(expected));
 		}
-		/**
+	/**
 	*Test multiple.
 	**/
 	@Test

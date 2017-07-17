@@ -5,12 +5,12 @@ package ru.job4j.calculator;
 * @author VladimirKhrushchev
 * @since 12.07.2017
 * @version 0.1
-*/
+**/
 
 public class Calculator {
 	/**
 	*Variable to save result.
-	*/
+	**/
     private double result;
 	/**
 	* Method to add two nubmers.
