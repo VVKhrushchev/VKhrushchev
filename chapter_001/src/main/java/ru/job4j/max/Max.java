@@ -15,9 +15,10 @@ public class Max {
 	* Method whenFirstLessSecond.
 	* @param first - first argument
 	* @param second - second argument
+	* @return max
 	*/
 	public int max(int first, int second) {
-		int max = int first > int second ? int first : int second;
-		return int max;
+		int max = first > second ? first : second;
+		return max;
 	}
 }
