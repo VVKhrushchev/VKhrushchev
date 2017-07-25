@@ -1,6 +1,6 @@
 /**
-* Package for for Function PointOnTheline
-* @author VladimirKhrushchev
+* Package for for Function PointOnTheline.
+* @author VladimirKhrushchev.
 * @since 21.07.2017
 * @version 0.1
 */

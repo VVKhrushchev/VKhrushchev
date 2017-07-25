@@ -23,3 +23,5 @@ public class PointTest {
     Point point = new Point();
     boolean result = point.is();
     assertThat(result, is(a * x + b));
+	}
+}
