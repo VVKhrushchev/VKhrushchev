@@ -14,14 +14,25 @@ import static org.junit.Assert.assertThat;
 */
 
 
-public class PointTest {
+	public class PointTest {
 	/**
 	* Test whenPointOnTheline.
 	**/
 	@Test
 	public void whenPointOnTheline() {
-    Point point = new Point();
-    boolean result = point.is();
-    assertThat(result, is(a * x + b));
+	Point point = new Point(2, 6);
+	boolean result = point.is(2, 2);
+	boolean expected = true;
+	assertThat(result, is(expected));
 	}
+	/**
+	* Test whenPointNotOnTheline.
+	**/
+	@Test
+		public void whenPointNotOnTheline() {
+		Point point = new Point(3, 15);
+		boolean result = point.is(4, 6);
+		boolean expected = false;
+		assertThat(result, is(expected));
+}
 }

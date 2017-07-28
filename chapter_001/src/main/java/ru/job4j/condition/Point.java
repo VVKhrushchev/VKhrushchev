@@ -13,47 +13,42 @@ package ru.job4j.condition;
 	*/
 public class Point {
 	/**
-	* @param int x;
+	* x - coordinate X.
 	*/
 	private int x;
 	/**
-	* @param int y;
+	* y - coordinate Y.
 	*/
 	private int y;
 	/**
-	* Method Point.
-	* @param 'x'.
-	* @param 'y'.
+	* @param x - coordinate X.
+	* @param y - coordinate Y.
 	*/
-public point(int x, int y) {
-	/**
-	* @param int x;
-	*/
+	public Point(int x, int y) {
 	this.x = x;
-	/**
-	* @param int y;
-	*/
-    this.y = y;
-  }
+	this.y = y;
+	}
 	/**
 	* Method getX.
-	* @return x
+	* @return X.
 	*/
 	public int getX() {
       return this.x;
   }
 	/**
 	* Method getY.
-	* @return y;
+	* @return Y.
 	*/
   public int getY() {
      return this.y;
   }
 	/**
-	* Method boolean is.
-	* @return y;
+	* Сheck point on function y(x) = a * x + b.
+	* @param a - value a.
+	* @param b - value b.
+	* @return true or false.
 	*/
   public boolean is(int a, int b) {
-    return  a * x + b;
+    return this.y == a * this.x + b;
 }
 }
