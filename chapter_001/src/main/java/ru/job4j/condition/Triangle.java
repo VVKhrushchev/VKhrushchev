@@ -1,15 +1,37 @@
 package ru.job4j.condition;
 
-public class Triangle {
-    private Point a;
-    private Point b;
-    private Point c;
 
-    public Triangle(Point a, Point b, Point c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
+/**
+* Triangle.
+*/
+public class Triangle {
+	/**
+	* a - point a.
+	*/
+    private Point a;
+	/**
+	* a - point b.
+	*/
+    private Point b;
+	/**
+	* a - point c.
+	*/
+    private Point c;
+/**
+* Method Triangle.
+* @param a - point A.
+* @param b - point B.
+* @param c - point C.
+*/
+
+public Triangle(Point a, Point b, Point c) {
+
+this.a = a;
+
+this.b = b;
+
+this.c = c;
+}
 
     /**
      * Метод должен вычислять расстояние между точками left и right.
@@ -65,8 +87,8 @@ public class Triangle {
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             // написать формулу для расчета площади треугольника.
-            rsl = Math.sqrt(p *(p - ab) * (p - ac) * (p - bc));
-        }
+		rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
+}
         return rsl;
     }
 
@@ -78,10 +100,9 @@ public class Triangle {
      * @param ab Длина от точки a b.
      * @param ac Длина от точки a c.
      * @param bc Длина от точки b c.
-     * @return
+     * @return tag.
      */
     private boolean exist(double ab, double ac, double bc) {
-        boolean  exist = (ab + bc > ac) && (bc + ac > ab) && (ab + ac > bc);
-        return false;
-    }
+      return (ab + bc > ac) && (bc + ac > ab) && (ab + ac > bc);
+	  }
 }
